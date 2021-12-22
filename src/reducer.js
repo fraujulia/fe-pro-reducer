@@ -1,10 +1,10 @@
 function reducer(input, action) {
   switch (action) {
     case "upperCase":
-      string.toUpperCase();
+      console.log(string.toUpperCase());
       break;
     case "lowerCase":
-      string.toLowerCase();
+      console.log(string.toLowerCase());
       break;
     case "capitalize":
       str = string.split(" ");
