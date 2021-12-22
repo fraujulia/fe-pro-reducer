@@ -1,3 +1,11 @@
+function capitalize(string) {
+  str = string.split(" ");
+  newStr = str.map((item) => {
+    let firstSym = item[0].toUpperCase();
+    return firstSym + item.slice(1);
+  });
+}
+
 function reducer(input, action) {
   switch (action) {
     case "upperCase":
@@ -7,13 +15,8 @@ function reducer(input, action) {
       console.log(string.toLowerCase());
       break;
     case "capitalize":
-      str = string.split(" ");
-      newStr = str.map((item) => {
-        let firstSym = item[0].toUpperCase();
-        return firstSym + item.slice(1);
-      });
+      capitalize(string);
       return newStr.join(" ");
-      break;
   }
 }
 
