@@ -11,13 +11,10 @@ function reducer(input, action) {
   switch (action) {
     case "upperCase":
       return string.toUpperCase();
-      break;
     case "lowerCase":
      return string.toLowerCase();
-      break;
     case "capitalize":
       return capitalize(string);
-      break;
   }
 }
 
