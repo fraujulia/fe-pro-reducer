@@ -16,7 +16,7 @@ function reducer(input, action) {
      return input.toLowerCase();
      break;
     case "capitalize":
-      return capitalize(string);
+      return capitalize(input);
       break;
   }
 }
