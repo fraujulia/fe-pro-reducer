@@ -10,11 +10,14 @@ function capitalize(string) {
 function reducer(input, action) {
   switch (action) {
     case "upperCase":
-      return string.toUpperCase();
+      return input.toUpperCase();
+      break;
     case "lowerCase":
-     return string.toLowerCase();
+     return input.toLowerCase();
+     break;
     case "capitalize":
       return capitalize(string);
+      break;
   }
 }
 
