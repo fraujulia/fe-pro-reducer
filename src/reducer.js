@@ -4,19 +4,17 @@ function capitalize(string) {
     let firstSym = item[0].toUpperCase();
     return firstSym + item.slice(1);
   });
+  return newStr.join(" ");
 }
 
 function reducer(input, action) {
   switch (action) {
     case "upperCase":
-      console.log(string.toUpperCase());
-      break;
+      return string.toUpperCase();
     case "lowerCase":
-      console.log(string.toLowerCase());
-      break;
+      return string.toLowerCase();
     case "capitalize":
-      capitalize(string);
-      return newStr.join(" ");
+      return capitalize(string);
   }
 }
 
